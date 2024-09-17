@@ -5,70 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie's About Me Page</title>
+
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+
     <header>
-        <p style="border:5px solid green;text-align: center;"><b>Welcome to Stephanie Motz's Personal Site!</b></p>
+        <h1>Stephanie Motz</h1>
+
+        <a href="work.html">My Projects</a>
+        <a href="index.html">Home</a>
+
     </header>
 
     <main>
 
-        <h1>Stephanie Motz</h1>
-        <p>Hello, my name is Stephanie Motz and I am a senior Computer Science major at Elizabethtown College.
-            I am an active student across campus involving myself in different experiences whenever I get the chance. 
-            I am employed on campus with Technical Operations, where I run tech for different events. In my free time I love spending time
-            in Tempest Theatre!
-              
-        </p>
+        <div class="about-section">
+            
+            
+            <div class="about-text">
+                <h2>Hello! I am</h2>
+                <h1 class="name">Stephanie Motz</h1>
+                <h3>A senior computer science major at Elizabethtown College with a minor in Graphic Design, 
+                and a concentration in Web and Application Design. Eager to secure an internship using past
+                experience with programming languages and web design. Excels in areas such as problem-
+                solving, teamwork, and analytical quantitative skills.</h3>
+                <a href="files/Stephanie Motz Resume.pdf" download="Stephanie Motz Resume.pdf">
+                    <button class="button" style="vertical-align:middle"><span>Get My Resume</span></button>
+                </a>
+            </div>
+            <img src="images/MotzHeadshot.jpg" alt="headshot" class="headshot">
+        </div>
+            
 
-        <b>Class List</b>
-        <ol>
-            <li>CS310- Web Development</li>
-            <li>ART325- Designing for the Web and Social Media</li>
-            <li>ES113- Earth in Space</li>
-            <li>CS401- Capstone Project</li>
-            <li>PE100- Yoga and Pilates</li>
-        </ol>
 
-        <b>Steph's Favorite Albums</b>
-        <ul>
-            <li>"Wasteland, Baby!" by Hozier </li> 
-            <li><a href="https://www.youtube.com/watch?v=Ulv0nYBj_d8" target="_blank">"The Rise and Fall of Ziggy Stardust"</a> by David Bowie</li>
-            <li>"The Rise and Fall of a Midwest Princess" by Chappell Roan</li>
-            <li>"Decide" by DJO</li>
-        </ul>
 
-        <table>
-            <tr>
-                <th> 
-                    <td>Happy:<img src="images/man happy.webp" alt="Happy" height=150></td>
-                    <td><img src="images/sad otter.jpg" alt="Happy" height=150> Sad:</td>
-
-                </th>
-                
-            </tr>
-
-        </table>
-
-        <br><br>
-
-        <b>Fun Facts about my Neighbors!</b>
-        <ul>
-            <li>Danielle Strausburger: At 6 years old she was the top swimmer in the county</li>
-            <li>Isabel Pacheco Mattivi: She has been out of the country 6 times</li>
-        </ul>
 
         
 
+        <BR><BR>
 
 
+        <b>Skills</b>
+        <ul>
+            <li>Coding Lanuages: Python, Java, JavaScript, C, HTML, PHP</li>
+            <li>Adobe Applications: Photoshop, Illustrator, inDesign, AfterEffects, Lightroom</li>
+            <li>Other: SQL, CSS, Microsoft Office, Excel, GitHub</li>
+        </ul>
+
+        <h3 class="RelevantCourses">Relevant Courses</h3>
+       
+    <div class="courses">
+        <table>
+            <caption> 
+                Computer Science Courses
+            </caption>
+            <thead>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>CS121</th>
+                    <th>Computer Science I</th>
+                </tr>
+                <tr>
+                    <th>CS122</th>
+                    <th>Computer Science II</th>
+                </tr>
+                <tr>
+                    <th>CS209</th>
+                    <th>Database Systems</th>
+                </tr>
+                <tr>
+                    <th>CS221</th>
+                    <th>Data Structures</th>
+                </tr>
+                <tr>
+                    <th>CS222</th>
+                    <th>Systems Programming</th>
+                </tr>
+                <tr>
+                    <th>CS310</th>
+                    <th>Web Development</th>
+                </tr>
+                <tr>
+                    <th>CS322</th>
+                    <th>Algorithms</th>
+                </tr>
+                <tr>
+                    <th>CS341</th>
+                    <th>Software Engineering</th>
+                </tr>
+                <tr>
+                    <th>CS395</th>
+                    <th>Professional Development Seminar</th>
+                </tr>
+                <tr>
+                    <th>CS396</th>
+                    <th>Industry Speakers and Special Topic</th>
+                </tr>
+                <tr>
+                    <th>CS401</th>
+                    <th>Capstone Project in Computing</th>
+                </tr>
+                <tr>
+                    <th>CS421</th>
+                    <th>Programming Language Design and Implementation</th>
+                </tr>    
+            </tbody>
+        </table>
+
+        <br><br><br>
+
+
+        <table>
+            <caption>Graphic Design Courses</caption>
+            <thead>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>ART297</th>
+                    <th>Introduction to Graphic Design</th>
+                </tr>
+                <tr>
+                    <th>ART325</th>
+                    <th>Designing for the Web and Social Media</th>
+                </tr>
+                <tr>
+                    <th>ART354</th>
+                    <th>Motion Graphics</th>
+                </tr>
+                <tr>
+                    <th>ART406</th>
+                    <th>Graphic Design 3</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+ 
     </main>
 
     <footer>
-        <p style="border:5px solid green;text-align: center;"><b>Contact Info: <br> Email: Motzs@etown.edu <br>GitHub: StephanieMotz</b>
-        </p>
-        
-    </footer>
+        <a class="footer-link" href="https://www.linkedin.com/in/StephanieMotz" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://www.github.com/StephanieMotz" target="_blank">GitHub</a>
+        <p class="footer-link">Email: Smotz0328@gmail.com</p>
+        <p class="copyright">© 2022 Stephanie Motz @ CS310 - Elizabethtown College.</p>
+      </footer>
   
 </body>
 </html>
