@@ -1,8 +1,45 @@
+h1 {
+    color: green;
+}
 
-header {
-    background-color: rgb(204, 214, 166);
-    text-align: center;
-    padding: 50px 20px;
+/* Navbar */
+.navbar {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+border: 1px solid #e7e7e7;
+background-color: rgb(204, 214, 166);
+display: flex;              
+justify-content: space-between; 
+align-items: center; 
+font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar li {
+float: left;
+}
+
+.navbar li a {
+display: block;
+color: #666;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+background-color: #ddd;
+}
+
+.navbar li a.active {
+color: white;
+background-color: rgb(38, 133, 41);
+}
+
+.navbar-right {
+    margin-left: auto; 
+    font-size: large;
 }
 
 body{
@@ -11,6 +48,7 @@ body{
 
 .RelevantCourses{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 #name{
     text-decoration:rgb(11, 122, 11);
@@ -37,15 +75,10 @@ body{
     justify-content: space-evenly;
 }
 
-.introduction {
-    width: 10px;
-
-} 
-
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
     
@@ -55,6 +88,9 @@ caption {
   caption-side: top;
   padding: 10px;
   font-weight: bold;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
 }
 
 thead,
@@ -80,7 +116,7 @@ tbody > tr:nth-of-type(even) {
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #268529;
+  background-color: rgb(38, 133, 41);
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -135,13 +171,13 @@ tbody > tr:nth-of-type(even) {
     border: 1px solid rgb(160 160 160);             
 }
 
-/* Styling for the text next to the image */
+
 .about-text {
     max-width: 600px;                
-    line-height: 1.5;               
+    line-height: 1.5;   
+    font-family: 'Times New Roman', Times, serif;            
 }
 
-/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;      
@@ -153,6 +189,11 @@ tbody > tr:nth-of-type(even) {
     }
 }
 
+.skills {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
 
 footer {
     background-color: rgb(204, 214, 166);
@@ -161,7 +202,7 @@ footer {
 }
 
 footer .footer-link {
-    color: #0984e3;                 
+    color: rgb(4, 73, 32);                 
            
 }
 
@@ -170,7 +211,8 @@ footer .footer-link:hover {
 }
 
 footer .copyright {
-    color: rgb(255, 78, 136);
+    color: rgb(4, 73, 32);
     font-size: 15px;
     padding-top: 20px;
 }
+
