@@ -216,12 +216,139 @@ footer .copyright {
 
 #projectTitle {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: green;
+
 }
 
+/* Accordion header background */
+.accordion-button {
+  background-color: #CCD6A6;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Accordion body background */
 .accordion-body {
-  background-color: rgb(247, 237, 219);
+  background-color: #F7EDDB;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.accordion-header {
-  background-color: rgb(204, 214, 166);
+/* Active accordion item */
+.accordion-button:not(.collapsed) {
+  background-color: #DFE8CC;
+  color: #333;
 }
+
+/* Hover effect */
+.accordion-button:hover {
+  background-color: #DAE2B6;
+  color: #333;
+}
+
+/* Border color */
+.accordion-item {
+  border-color: #DFE8CC;
+}
+
+/*Carousel CSS*/
+/* Style for the entire carousel container */
+.carousel {
+  max-width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Caption background styling */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow for better readability */
+}
+
+/* Caption title styling */
+.carousel-caption h5 {
+  font-size: 1.75rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-inner img {
+  border-radius: 8px;
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-indicators button {
+  background-color: #fff;
+}
+
+/* Make the carousel responsive */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Style the previous and next buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px; /* Increase arrow size */
+  height: 50px; /* Increase arrow size */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a background color */
+  border-radius: 50%; /* Make the button round */
+  padding: 10px;
+  filter: invert(100%); /* Make the arrow white */
+}
+
+/* Background color and visibility for the buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3); /* Add semi-transparent background */
+  width: 60px; /* Increase button size */
+  height: 60px; /* Increase button size */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Align with the middle of the carousel */
+}
+
+/* Hover effect to make the buttons stand out */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the background on hover */
+}
+
+/* For larger screens, keep the button larger */
+@media (min-width: 768px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 70px;
+    height: 70px;
+  }
+}
+
